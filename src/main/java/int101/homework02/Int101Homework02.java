@@ -39,7 +39,7 @@ public class Int101Homework02 {
 
             System.out.println("testPositive result: " + Utilitor.testPositive(42.5));
             
-            System.out.println("computeIsbn10 result: " + Utilitor.computeIsbn10(123456789));
+            System.out.println("computeIsbn10 result: " + Utilitor.computeIsbn10(1234567890L));
         } catch (NullPointerException | IllegalArgumentException e) {
             System.err.println("Error: " + e.getMessage());
         }
