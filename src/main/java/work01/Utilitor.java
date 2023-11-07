@@ -17,15 +17,12 @@ public class Utilitor {
         }
 
     public static long computeIsbn10(long isbn10) {
-        long l = Long.toString(isbn10).length();
-        long sum = 0;
-        long digit = isbn10 % 10;
+        long sum = 0;  
         for(int i = 10;i >= 2; i++){
+            long digit = isbn10 % 10;
             sum += digit*i;
             isbn10/=10;
         }
-        return isbn10%11;
+        return sum%11;
     }
-
-
 }
